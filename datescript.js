@@ -20,11 +20,11 @@ function getMonthText(month) {
     return months[month];
 }
 // Funktion der konverterer et månedstal til et dansk dagsnavn
+// NOTE: De 2 ovenstående funktioner ville have været ubrugelige hvis "toLocaleDate" virkede, men det gav ikke det rigtige resultat på dansk
+// derfor valgte jeg at gøre det manuelt
 function getDayText(day) {
     var days = ['Søndag', 'Mandag', 'Tirsdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lørdag'];
     return days[day];
 }
-// NOTE: De 2 ovenstående funktioner ville have været ubrugelige hvis "toLocaleDate" virkede, men det gav ikke det rigtige resultat på dansk
-// derfor valgte jeg at gøre det manuelt
 // Konsol log der viser tid og dato
 console.log(getMyDate(myDate));
