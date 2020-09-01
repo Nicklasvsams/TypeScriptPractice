@@ -40,7 +40,5 @@ function getDayText(day:number):string{
     return days[day];
 }
 
-
-
 // Konsol log der viser tid og dato
 console.log(getMyDate(myDate));
