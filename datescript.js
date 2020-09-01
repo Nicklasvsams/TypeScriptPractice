@@ -3,7 +3,7 @@ exports.__esModule = true;
 // Instantiering af et nyt Date objekt
 var date = new Date();
 // Funktion der kalder på en funktion der har en formateret string version af tid og dato
-function getMyDate(date) {
+function getMyDateString(date) {
     return "Time: " + date.time + "\nDate: " + date.localTime;
 }
 // Vores dato objekt der har forskellige properties (De fleste er der som eksempler uden at blive brugt)
@@ -27,4 +27,4 @@ function getDayText(day) {
     return days[day];
 }
 // Konsol log der viser tid og dato
-console.log(getMyDate(myDate));
+console.log(getMyDateString(myDate));

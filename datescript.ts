@@ -4,7 +4,7 @@ export {};
 var date = new Date();
 
 // Funktion der kalder på en funktion der har en formateret string version af tid og dato
-function getMyDate(date:Date):string{
+function getMyDateString(date:Date):string{
     return "Time: " + date.time + "\nDate: " + date.localTime;
 }
 
@@ -41,4 +41,4 @@ function getDayText(day:number):string{
 }
 
 // Konsol log der viser tid og dato
-console.log(getMyDate(myDate));
+console.log(getMyDateString(myDate));
