@@ -4,7 +4,7 @@ exports.__esModule = true;
 var date = new Date();
 // Funktion der kalder på en funktion der har en formateret string version af tid og dato
 function getMyDateString(date) {
-    return "Time: " + date.time + "\nDate: " + date.localTime;
+    return "Time: " + date.time + "\nDate: " + date.localDate;
 }
 // Vores dato objekt der har forskellige properties (De fleste er der som eksempler uden at blive brugt)
 var myDate = {
@@ -12,7 +12,7 @@ var myDate = {
     day: date.getDay().toString(),
     month: (date.getMonth() + 1).toString(),
     year: date.getFullYear.toString(),
-    localTime: (getDayText(date.getDay()) + ", " + date.getDate() + " " + getMonthText(date.getMonth()) + ", " + date.getFullYear()).toString()
+    localDate: (getDayText(date.getDay()) + ", " + date.getDate() + " " + getMonthText(date.getMonth()) + ", " + date.getFullYear()).toString()
 };
 // Funktion der konverterer et månedstal til det danske månedsnavn
 function getMonthText(month) {
